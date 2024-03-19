@@ -42,14 +42,14 @@ def main():
                     # Verwende die Position des Handgelenks als Referenzpunkt für die Unterscheidung zwischen Handfläche und Handrücken
                     if hand_side == "links":
                         if thumb_x < index_x and thumb_x < wrist_x:
-                            hand_label = "Handflaeche"
+                            hand_label = "Handruecke"
                         else:
-                            hand_label = "Handruecken"
+                            hand_label = "Handflaeche"
                     else:
                         if thumb_x > index_x and thumb_x > wrist_x:
-                            hand_label = "Handflaeche"
+                            hand_label = "Handruecke"
                         else:
-                            hand_label = "Handruecken"
+                            hand_label = "Handflaeche"
 
                     # Visualisierung der Hand
                     mp_drawing.draw_landmarks(frame, hand_landmarks, mp_hands.HAND_CONNECTIONS)
@@ -80,5 +80,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
