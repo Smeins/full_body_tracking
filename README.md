@@ -1,5 +1,5 @@
 # Full Body Tracking with detailed Hands
-This is about a simple python-script that handels a full body tracking with detailed hands.
+This is about a simple python-script that handels full body tracking with detailed hands.
 ## How to use:
 To use the script you need to install mediapipe and opencv:
 ```bash
